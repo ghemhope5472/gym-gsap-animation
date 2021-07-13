@@ -13,3 +13,87 @@ const mobileMenu = () =>{
 }
 
 menu.addEventListener('click', mobileMenu)
+
+
+// Animation
+gsap.registerPlugin(ScrollTrigger)
+gsap.from('.animate-hero', {
+    duration: 0.6,
+    opacity:0,
+    y: -150,
+    stagger: 0.3
+})
+gsap.from('.animate-services', {
+    scrollTrigger: '.animate-services',
+    duration: 0.5,
+    opacity:1,
+    x: -150,
+    stagger: 0.12
+})
+gsap.from('.animate-services-img', {
+    scrollTrigger: '.animate-services',
+    duration: 1,
+    opacity:0,
+    y: -200,
+    
+})
+gsap.from('.animate-membership', {
+    scrollTrigger: '.animate-membership',
+    duration: 1,
+    opacity:0,
+    y: -200,  
+})
+
+gsap.from('.animate-card', {
+    scrollTrigger: '.animate-card',
+    duration: 2,
+    opacity:0,
+    y: -200,  
+})
+
+gsap.from('.animate-team', {
+    scrollTrigger: '.animate-team',
+    duration: 1,
+    opacity:0,
+    y: -200,  
+    stagger:0.2
+})
+gsap.from('.animate-person1', {
+    scrollTrigger: '.animate-person1',
+    duration: 0.5,
+    opacity:0,
+    x:-150,
+})
+gsap.from('.animate-person2', {
+    scrollTrigger: '.peter',
+    duration: 0.5,
+    opacity:0,
+    x:150,
+})
+gsap.from('.animate-person3', {
+    scrollTrigger: '.diego',
+    duration: 0.5,
+    opacity:0,
+    x:-150,
+})
+gsap.from('.animate-person4', {
+    scrollTrigger: '.marco',
+    duration: 0.5,
+    opacity:0,
+    x:150,
+})
+
+gsap.from('.animate-trial', {
+    scrollTrigger: '.animate-trial',
+    duration:0.5,
+    opacity:0,
+    x :-150
+})
+
+
+
+
+
+
+
+ 
